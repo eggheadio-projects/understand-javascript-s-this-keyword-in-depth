@@ -11,7 +11,7 @@
     var originalConsoleLog = console.log
     console.log = function() {
       originalConsoleLog.apply(console, arguments)
-      var args = Array.prototype.slice.call(arguments);
+      var args = Array.prototype.slice.call(arguments).map(JSON.stringify);
       document.body.innerText += args.join(' ') + '\n';
       document.body.style['fontFamily'] = 'monospace';
       document.body.style['fontSize'] = '1.5em';
