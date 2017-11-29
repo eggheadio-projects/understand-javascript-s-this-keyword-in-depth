@@ -1,11 +1,20 @@
-function Person(firstName, lastName) {
-  console.log(this);
-  this.firstName = firstName;
-  console.log(this);
-  this.lastName = lastName;
-  console.log(this);
-  
-  // return this;
-}
+// Part 1
+const person = {
+  firstName: "John",
+  sayHi() {
+      console.log(`Hi, my name is ${this.firstName}!`);
+  }
+};
 
-const person = new Person("Jane", "Doe");
+person.sayHi();
+
+// Part 2
+const person = {
+  firstName: "John",
+  sayHi() {
+      console.log(`Hi, my name is ${this.firstName}!`);
+  }
+};
+
+const greet = person.sayHi;
+greet();

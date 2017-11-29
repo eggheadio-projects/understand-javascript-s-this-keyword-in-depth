@@ -1,11 +1,11 @@
-// "use strict";
-
 function Person(firstName, lastName) {
+  console.log(this);
   this.firstName = firstName;
+  console.log(this);
   this.lastName = lastName;
+  console.log(this);
+  
+  // return this;
 }
 
-const person = Person("Jane", "Doe");
-console.log(person);
-console.log(window.firstName);
-console.log(window.lastName);
+const person = new Person("Jane", "Doe");
