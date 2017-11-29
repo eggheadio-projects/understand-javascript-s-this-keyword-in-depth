@@ -9,12 +9,12 @@ const person = {
 person.sayHi();
 
 // Part 2
-const person = {
-  firstName: "John",
-  sayHi() {
-      console.log(`Hi, my name is ${this.firstName}!`);
-  }
-};
+// const person = {
+//   firstName: "John",
+//   sayHi() {
+//       console.log(`Hi, my name is ${this.firstName}!`);
+//   }
+// };
 
-const greet = person.sayHi;
-greet();
+// const greet = person.sayHi;
+// greet();
